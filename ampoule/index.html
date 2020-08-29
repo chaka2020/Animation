@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bibliothèque</title>
+</head>
+<body id="bd">
+	<style type="text/css">
+		body{
+			width: 100%
+		}
+		#off{
+			position: absolute;
+			left:40%;
+			right: 40%;
+			top: 200px;
+		}
+
+		#button{
+			position: absolute;
+			left:38%;
+			right: 40%;
+			top: 500px;
+
+		}
+		button{
+			background: red;
+			font-family: "Berlin Sans FB", "Times New Roman", Impact, sans-serif;
+			font-size: 1.1em;
+			color: white;
+		}
+
+	    @keyframes superanimation{
+	 	  0%{
+	 		transform: rotate(360deg);
+	 	   }
+	     }
+
+	     img{
+	     	animation-name: superanimation;
+	     	animation-duration: 3s;
+	     	animation-iteration-count: 3;
+	     }
+
+
+	</style>
+	<DIV id="button">
+	 <button onclick="document.getElementById('off').src='bulb-33238_1280.png'; document.getElementById('bd').style.backgroundColor='white'; ">Light down!</button>
+     <button onclick="myLight()">Light up!</button>
+    
+    </DIV>
+    <p><img src="Images/bulb-33238_1280.png" id="off" style="width: 150px;"></p>
+    <script>
+
+     function myLight() {
+     	document.getElementById('off').src="light-311119_1280.png";
+     	document.getElementById('bd').style.backgroundColor='black';
+     }
+
+      function Lightning() {
+     	document.getElementById('off').src="lightbulb-1875247_1920.jpg";
+     	document.getElementById('bd').style.backgroundColor='black';
+     }
+
+    
+
+    </script>
+</body>
+</html>
